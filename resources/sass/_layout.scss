@@ -1,0 +1,30 @@
+body {
+    background: red;
+}
+
+.navbar-sempai {
+    background: #41ad49;
+    color: #ffffff;
+    .nav-link {
+        color: #ffffff;
+        &:hover {
+            color: #c6e6c8;
+        }
+    }
+    .navbar-brand {
+        img {
+            max-width: 100px;
+        }
+    }
+}
+img {
+    &.img-invert {
+        filter: invert(1);
+    }
+}
+.alert-fixed {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    margin: 0;
+}
