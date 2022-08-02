@@ -29,6 +29,7 @@ MAIL_FROM_NAME=Your Real Name
 <h4> Materiały dodatkowe: </h4>
 
 DEMO: https://sempai.piotrbenedyk.pl/
+
 Swagger API: https://app.swaggerhub.com/apis/KONTAKT_2/Sempai/1.0.0
 
 Token API można uzyskać po zalogowaniu (górny navbar)
