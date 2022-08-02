@@ -93,6 +93,6 @@ class MailerController extends Controller
     {
         $user = User::find(Auth::id());
         $token = $user->createToken('auth_token')->plainTextToken;
-        dd($token);
+        return view('auth.generateApiToken')->with(['token' => $token]);
     }
 }
