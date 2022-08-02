@@ -4,7 +4,8 @@ Instalacja:
 ```bash
     git clone https://github.com/pbenedyk/sempai-mailer.git
     composer install
-    npm run prod
+    npm install && npm run prod
+    php artisan migrate
     php artisan queue:work 
  ```
 
