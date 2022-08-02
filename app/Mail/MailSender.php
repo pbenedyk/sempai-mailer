@@ -29,10 +29,6 @@ class MailSender extends Mailable implements ShouldQueue
     public function build()
     {
         return $this->view('emails.template')
-            ->from([
-                'address' => env('MAIL_FROM_ADDRESS', 'sempai@piotrbenedyk.pl'),
-                'name' => env('MAIL_FROM_NAME', 'SEMPAI Mailer'),
-            ])
             ->subject($this->message->title)
             ->with(['msg' => $this->message]);
     }
