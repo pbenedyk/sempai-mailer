@@ -21,6 +21,7 @@ use App\Http\Controllers\MailerController;
 Auth::routes();
 
 Route::middleware(['auth'])->group(function () {
+    Route::get('/home', [MailerController::class, 'index'])->name('mailerListHome');
     Route::get('/', [MailerController::class, 'index'])->name('mailerList');
     Route::get('/mailer/add', function () {
         return view('mailer.add');
