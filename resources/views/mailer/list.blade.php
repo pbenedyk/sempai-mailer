@@ -8,11 +8,12 @@
                 <table class="table table-striped">
                     <thead class="bg-dark text-white">
                         <tr>
-                            <th>ID</th>
-                            <th>Send To</th>
-                            <th>Title</th>
-                            <th>Date</th>
-                            <th class="text-center"><a href="/mailer/add" class="btn btn-sm btn-success">+ Add</a></th>
+                            <th>{{ __('ID') }}</th>
+                            <th>{{ __('Send To') }}</th>
+                            <th>{{ __('Title') }}</th>
+                            <th>{{ __('Date') }}</th>
+                            <th class="text-center"><a href="/mailer/add" class="btn btn-sm btn-success">+
+                                    {{ __('Add') }}</a></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -25,15 +26,16 @@
                                     <td>{{ $mi->send_date }}</td>
                                     <td class="text-center">
                                         <a href="{{ route('mailerShow', [$mi->id]) }}"
-                                            class="btn btn-sm btn-secondary">Show</a>
-                                        <a class="btn btn-sm btn-danger deleteRow" data-id="{{ $mi->id }}">Remove</a>
+                                            class="btn btn-sm btn-secondary">{{ __('Show') }}</a>
+                                        <a class="btn btn-sm btn-danger deleteRow"
+                                            data-id="{{ $mi->id }}">{{ __('Remove') }}</a>
                                     </td>
                                 </tr>
                             @endforeach
                         @else
                             <tr>
                                 <td colspan="5">
-                                    Brak dodanych maili
+                                    {{ __('No e-mails') }}
                                 </td>
                             </tr>
                         @endif

@@ -28,7 +28,7 @@
                     <textarea class="form-control" id="content" rows="15" disabled>{{ $mailerItem->content }}</textarea>
                 </div>
                 <div class="form-group mt-2 text-right">
-                    <a href="{{ route('mailerList') }}" class="btn btn-primary float-right">Back</a>
+                    <a href="{{ route('mailerList') }}" class="btn btn-primary float-right">{{ __('Back')}}</a>
                 </div>
             </form>
         </div>
