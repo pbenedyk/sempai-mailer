@@ -27,7 +27,7 @@ class MailerController extends Controller
      */
     public function index()
     {
-        $mailerItems = $this->mailerItems->all();
+        $mailerItems = $this->mailerItems->orderBy('id', 'DESC')->get();
         return view('mailer.list')->with(['mailerItems' => $mailerItems]);
     }
 
